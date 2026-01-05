@@ -1,0 +1,14 @@
+{
+  "item": "Noir jacket",
+  "cost": "£60.00",
+  "email": "test.tester@outlook.com",
+  "lastName": "Regression",
+  "address": "4011 Brickstone Mews",
+  "addressOption": "4011 Brickstone Mews, Mississauga, ON, Canada",
+  "cardNbr": "4111 1111 1111 1111",
+  "cardExpiry": "1227",
+  "cardCVV": "123",
+  "cardName": "Regression Tester",
+  "loginEmail": "adityakiran.m@gmail.com",
+  "loginPwd": "RegressionTester"
+}

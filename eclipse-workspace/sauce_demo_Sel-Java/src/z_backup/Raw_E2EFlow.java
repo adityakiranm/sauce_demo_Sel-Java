@@ -1,9 +1,12 @@
-package e2e_order;
+package z_backup;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -14,10 +17,10 @@ import org.openqa.selenium.WebElement;
  * we implement generic methods only and not methods specific to chrome driver thus allowing
  * the flexibility to execute the same tests by configuring other drivers also*/
 
-public class E2EFlow_basic {
+public class Raw_E2EFlow {
 	
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");	//Manually download Chrome driver to system and setup 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://sauce-demo.myshopify.com/");

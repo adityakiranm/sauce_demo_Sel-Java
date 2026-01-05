@@ -1,0 +1,20 @@
+/*NOTES
+ * Classes like ChromeDriver, FirefoxDriver, SafariDriver etc implement the WebDriver Interface
+ * and provide their own implementation to the WebDriver methods
+ * An object of chrome driver referring to the implementations of web driver is created so that
+ * we implement generic methods only and not methods specific to chrome driver thus allowing
+ * the flexibility to execute the same tests by configuring other drivers also*/
+ 
+ /*HashMap<String, String> shipAndPayMap = new HashMap<>();
+		shipAndPayMap.put("item", "Noir jacket");
+		shipAndPayMap.put("cost", "£60.00");
+		shipAndPayMap.put("email", "test.tester@outlook.com");
+		shipAndPayMap.put("lastName", "Regression");
+		shipAndPayMap.put("address", "4011 Brickstone Mews");
+		shipAndPayMap.put("addressOption", "4011 Brickstone Mews, Mississauga, ON, Canada");
+		shipAndPayMap.put("cardNbr", "4111 1111 1111 1111");
+		shipAndPayMap.put("cardExpiry", "1227");
+		shipAndPayMap.put("cardCVV", "123");
+		shipAndPayMap.put("cardName", "Regression Tester");
+		shipAndPayMap.put("loginEmail", "adityakiran.m@gmail.com");
+		shipAndPayMap.put("loginPwd", "RegressionTester");*/
