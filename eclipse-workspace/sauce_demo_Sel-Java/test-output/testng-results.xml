@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T15:18:48 AST" name="Suite" finished-at="2026-01-05T15:19:05 AST" duration-ms="16620">
+  <suite started-at="2026-01-05T19:15:15 AST" name="Suite" finished-at="2026-01-05T19:15:32 AST" duration-ms="17123">
     <groups>
     </groups>
-    <test started-at="2026-01-05T15:18:48 AST" name="Place Order E2E Flow" finished-at="2026-01-05T15:19:05 AST" duration-ms="16620">
+    <test started-at="2026-01-05T19:15:15 AST" name="Place Order E2E Flow" finished-at="2026-01-05T19:15:32 AST" duration-ms="17123">
       <class name="testScripts.test_placeOrder_E2E">
-        <test-method signature="placeOrder()[pri:0, instance:testScripts.test_placeOrder_E2E@3b6d844d]" started-at="2026-01-05T15:18:48 AST" name="placeOrder" finished-at="2026-01-05T15:19:04 AST" duration-ms="16248" status="PASS">
+        <test-method signature="placeOrder()[pri:0, instance:testScripts.test_placeOrder_E2E@730d2164]" started-at="2026-01-05T19:15:15 AST" name="placeOrder" finished-at="2026-01-05T19:15:32 AST" duration-ms="16785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.test_placeOrder_E2E@3b6d844d]" started-at="2026-01-05T15:19:04 AST" name="teardown" finished-at="2026-01-05T15:19:05 AST" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.test_placeOrder_E2E@730d2164]" started-at="2026-01-05T19:15:32 AST" name="teardown" finished-at="2026-01-05T19:15:32 AST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

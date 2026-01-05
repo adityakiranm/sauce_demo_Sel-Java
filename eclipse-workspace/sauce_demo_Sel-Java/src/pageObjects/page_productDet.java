@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,7 +48,7 @@ public class page_productDet extends utils {
 		Assert.assertEquals("Add to Cart", (addToCart.getAttribute("value")));
 	}
 	
-	public page_myCartCheckOut addProductToCartAndCheckout() {
+	public page_myCartCheckOut addProductToCartAndCheckout() throws IOException {
 		verifyProductDetailsAreDisplayed();
 		Select selectSize = new Select(productSize);
 		selectSize.selectByValue("M");
@@ -55,6 +57,7 @@ public class page_productDet extends utils {
 		selectColor.selectByValue("Blue");
 		
 		Assert.assertTrue(addToCart.isDisplayed());
+		captureScreenshot();
 		addToCart.click();
 		waitForPresenceOfElementLocated(cartCount);
 		

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -68,13 +69,15 @@ public class page_shipAndPay extends utils {
 		Assert.assertEquals("Delivery", deliveryAddressLbl.getText());
 	}
 	
-	public void shipAndPay(HashMap<String, String> shipAndPay) {
+	public void shipAndPay(HashMap<String, String> shipAndPay) throws IOException {
 		isShipAndPayDisplayed();
+		captureScreenshot();
 		validateSelectedItemTypeAndCost(shipAndPay.get("item"), shipAndPay.get("cost"));
 		verifyAndEnterPersonalDeails(shipAndPay.get("email"), shipAndPay.get("lastName"), shipAndPay.get("address"));
 		enterAndSelectAddress(shipAndPay.get("addressOption"));
 		verifyAndEnterCreditCardDetails(shipAndPay.get("cardNbr"), shipAndPay.get("cardExpiry"), shipAndPay.get("cardCVV"), shipAndPay.get("cardName"));
 		IspayNowClickable();
+		captureScreenshot();
 	}
 	
 	

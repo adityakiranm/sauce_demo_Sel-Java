@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,8 +35,9 @@ public class page_myCartCheckOut extends utils {
 		Assert.assertTrue(checkOutBtn.isDisplayed());
 	}
 	
-	public page_shipAndPay checkoutMyCart() {
+	public page_shipAndPay checkoutMyCart() throws IOException {
 		verifyCartPageIsDisplayed();
+		captureScreenshot();
 		checkOutBtn.click();
 		System.out.println("Check Out button has been clicked successfully");
 		page_shipAndPay shipPayPage = new page_shipAndPay(driver);
